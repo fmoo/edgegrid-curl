@@ -182,7 +182,7 @@ class EGSigner(object):
     return content_hash
 
 
-config = os.environ["HOME"] + "/.egcurl"
+config = os.path.join(os.path.expanduser("~"), ".egcurl")
 section = "default"
 verbose = False
 method = None
